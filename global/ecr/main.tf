@@ -17,3 +17,8 @@ resource "aws_ecr_repository" "dailycode_service" {
   name                 = "cli-team/dailycode-service"
   image_tag_mutability = "IMMUTABLE"
 }
+
+resource "aws_ecr_repository" "reverse_proxy" {
+  name                 = "cli-team/reverse-proxy"
+  image_tag_mutability = "IMMUTABLE"
+}

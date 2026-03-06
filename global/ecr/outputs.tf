@@ -13,3 +13,7 @@ output "frontend_repository_url" {
 output "dailycode_service_repository_url" {
   value = aws_ecr_repository.dailycode_service.repository_url
 }
+
+output "reverse_proxy_repository_url" {
+  value = aws_ecr_repository.reverse_proxy.repository_url
+}
